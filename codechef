@@ -1,0 +1,13 @@
+#!/bin/bash
+
+pushd "<PATH TO CODECHEF NODEJS DIRECTORY>"
+if [ -z "$1" ] 
+	then
+		npm start && popd
+
+elif [ -z "$2" ] 
+	then 
+		npm run contest "$1" && popd
+else
+	npm run contest "$1" "$2" && popd
+fi

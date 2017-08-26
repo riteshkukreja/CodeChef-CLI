@@ -1,0 +1,16 @@
+{
+  "name": "codechefcli",
+  "version": "1.0.0",
+  "description": "CLI for CodeChef",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "contest": "node fetchContest.js"
+  },
+  "dependencies": {
+  	"cheerio": "latest",
+  	"request": "latest"
+  },
+  "author": "Ritesh Kukreja",
+  "license": "MIT"
+}
